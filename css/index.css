@@ -130,9 +130,8 @@ a.link:hover {
 }
 
 .info-list {
-   margin-top: 4%;
    border-bottom: 0.1vw solid black;
-   padding-bottom: 2%;
+   padding: 4% 0;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -170,6 +169,12 @@ footer {
 }
 
 @media (max-width: 800px) {
+   h2 {
+      font-size: 2rem;
+   }
+   p {
+      font-size: 0.95rem;
+   }
 
    nav  {
       flex-direction: column-reverse;
@@ -201,6 +206,7 @@ footer {
 }
 
 @media (max-width: 500px) {
+
    .nav-links {
       flex-direction: column;
       justify-content: center;
