@@ -198,7 +198,32 @@ footer {
       width: 100%;
       font-size: 5rem;
    }
+}
 
 @media (max-width: 500px) {
+   .nav-links {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+   }
+
+   .nav-links > a {
+      padding: 5px 0;
+      border-bottom: 1px solid black;
+   }
+
+   .nav-links > a:first-child {
+      border-top: 1px solid black;
+   }
+
+   .info-list .info-box {
+      width: 100%;
+      padding: 20px 0;
+   }
    
+   .info-list .info-box.third {
+      width: 100%;
+   }
+
 }
