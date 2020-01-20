@@ -61,9 +61,7 @@ li {
 nav {
    display: flex;
    justify-content: space-between;
-   align-content: center;
    align-items: center;
-   margin-bottom: 1.5vh;
 }
 
 a.link {
@@ -76,19 +74,30 @@ a.link:hover {
    color: black;
 }
 
-.logo {
-   width: 12rem;
+.nav-links {
+   display: flex;
+   justify-content: space-between;
+   width: 75%;
+}
+
+.nav-logo {
+   width: 20%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.nav-logo img {
+   width: 100%;
 }
 
 
 .banner {
-   padding: 6vh 0 8vh;
+   padding: 4vh 0 6vh;
    display: flex;
    text-align: center;
    border-bottom: 0.1vw solid black;
    align-items: center;
    justify-content: space-around;
-   font-size: 7rem;
 }
 
 .banner .text-and-button {
@@ -96,13 +105,20 @@ a.link:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   font-size: 7vw;
 }
 
 .banner .text-and-button h1 {
    font-size: 1em;
-   margin: 0 0 1.5vh;
+   margin: 0;
 }
 
+.banner .text-and-button .button {
+   display: block;
+   font-size: 0.25em;
+   padding: 0.1em 2em;
+   margin: 1em 0 0;
+}
 
 .banner .innovation-image {
    width: 37%;
@@ -153,19 +169,36 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+   nav  {
+      flex-direction: column-reverse;
+      margin: 20px 0 25px;
+   }
+
+   .nav-links {
+      width: 100%;
+   }
+
+   .nav-logo{
+      justify-content: center;
+      width: 200px;
+      height: auto;
+      margin-bottom: 25px;
+   }
+
+   .nav-logo a {
+      width: 100%;
+   }
+
    .banner .innovation-image {
       display: none;
    }
 
    .banner .text-and-button {
       width: 100%;
+      font-size: 5rem;
    }
 
-   .banner .text-and-button h1 {
-      font-size: 5rem;
-      letter-spacing: 0.3rem;
-   }
-}
 @media (max-width: 500px) {
    
 }
