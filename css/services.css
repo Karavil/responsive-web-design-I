@@ -59,6 +59,7 @@ section#facts ul{
 
 section#facts li{
     margin: 1vh 0;
+    font-size: 1.1rem;
 }
 
 
@@ -86,7 +87,7 @@ section#facts img {
     
 
     section#facts {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     section#facts .facts-list {
@@ -94,11 +95,7 @@ section#facts img {
     }
 
     section#facts .image-box {
-        margin-top: 2vh;
         width: 100%;
-    }
-
-    footer {
-        font-size: 2vw;
+        margin-bottom: 10px;
     }
 }
