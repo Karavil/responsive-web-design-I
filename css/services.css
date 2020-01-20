@@ -1,0 +1,104 @@
+
+#services-banner {
+    border-bottom: 0.15vh black solid;
+    padding-bottom: 1.5vh;
+}
+#services-banner .services-header-img {
+    width: 100%;
+}
+
+#services-banner h1{
+    margin: 2vh 0 1vh;
+}
+
+
+section#services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    border-bottom: 0.15vh black solid;
+    margin-top: 2vw;
+}
+
+
+div.service-item {
+    width: 45vw;
+    background: rgb(216, 216, 216);
+    border: 2px black solid;
+    padding: 2vh 2vw;
+    margin-bottom: 2vw;
+}
+
+
+
+div.service-item h3 {
+    margin: 0;
+}
+
+.service-item .button {
+    margin: 1vh 0 0;
+    font-size: 1rem;
+}
+
+
+section#facts {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0;
+}
+
+section#facts h3{
+    margin-top: 0;
+}
+
+section#facts ul{
+    margin: 0;
+    padding: 0 1.2rem;
+}
+
+section#facts li{
+    margin: 1vh 0;
+}
+
+
+section#facts .facts-list {
+    width: 48%;
+}
+
+section#facts .image-box {
+    width: 50%;
+}
+
+section#facts img {
+    width: 100%; 
+}
+
+
+@media (max-width: 850px) {
+    section#services-list {
+        flex-direction: column;
+    }
+
+    div.service-item {
+        width: 100%;
+    }
+    
+
+    section#facts {
+        flex-direction: column;
+    }
+
+    section#facts .facts-list {
+        width: 100%;
+    }
+
+    section#facts .image-box {
+        margin-top: 2vh;
+        width: 100%;
+    }
+
+    footer {
+        font-size: 2vw;
+    }
+}
