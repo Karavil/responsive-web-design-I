@@ -84,7 +84,6 @@ section#facts img {
     div.service-item {
         width: 100%;
     }
-    
 
     section#facts {
         flex-direction: column-reverse;
@@ -92,6 +91,20 @@ section#facts img {
 
     section#facts .facts-list {
         width: 100%;
+    }
+
+    section#facts .facts-list li {
+        margin: 3px 0;
+        font-size: 0.9rem;
+    }
+
+    section#facts .facts-list ul {
+        margin: 20px 0;
+        width: 50%;
+    }
+
+    section#facts .facts-list p {
+        margin: 10px 0;
     }
 
     section#facts .image-box {
