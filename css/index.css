@@ -1,3 +1,235 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+   font-family: "Titillium Web", sans-serif;
+   margin: 0;
+   padding: 0;
+   letter-spacing: 0.05em;
+   /* border: 2px black solid; */
+}
+
+body {
+   padding: 3vh 4%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Bangers", cursive;
+}
+
+h1 {
+   line-height: 1;
+   font-size: 2.8rem;
+}
+
+h2 {
+   font-size: 2.5rem;
+}
+
+h3 {
+   font-size: 1.8rem;
+}
+
+p {
+   font-size: 1.2rem;
+}
+
+li {
+   font-size: 1rem;
+}
+
+.button {
+   color: black;
+   padding: 0.5em 5em;
+   font-size: 0.15em;
+   border-radius: 2px;
+   border: 0.1vw solid black;
+   text-decoration: none;
+   transition: 0.5s;
+   text-align: center;
+   display: block;
+}
+
+.button:hover {
+   cursor: pointer;
+   background: black;
+   color: white;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px 0 25px;
+}
+
+a.link {
+   font-size: 1.2rem;
+   color: gray;
+   text-decoration: none;
+}
+
+a.link:hover {
+   color: black;
+}
+
+.nav-links {
+   display: flex;
+   justify-content: space-between;
+   width: 75%;
+}
+
+.nav-logo {
+   width: 20%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.nav-logo img {
+   width: 100%;
+}
 
 
+.banner {
+   padding: 2vh 0 6vh;
+   display: flex;
+   text-align: center;
+   border-bottom: 0.1vw solid black;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.banner .text-and-button {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 7vw;
+}
+
+.banner .text-and-button h1 {
+   font-size: 1em;
+   margin: 0;
+}
+
+.banner .text-and-button .button {
+   display: block;
+   font-size: 0.25em;
+   padding: 0.1em 2em;
+   margin: 1em 0 0;
+}
+
+.banner .innovation-image {
+   width: 37%;
+}
+
+.banner .innovation-image img {
+   width: 100%;
+}
+
+.info-list {
+   border-bottom: 0.1vw solid black;
+   padding: 4% 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.info-list .info-box {
+   width: 49%;
+}
+
+.info-list .info-box.third {
+   width: 32.5%;
+}
+
+.info-list img {
+   width: 100%;
+   margin: 2vh 0;
+}
+
+.info-list .info-box #features {
+   width: 49%;
+}
+
+.contact {
+   margin-top: 3%;
+}
+
+.contact address p {
+   margin: 0.5% 0;
+}
+
+footer {
+   text-align: center;
+   font-size: 1rem;
+   padding: 3% 0;
+}
+
+@media (max-width: 800px) {
+   h2 {
+      font-size: 2rem;
+   }
+   p {
+      font-size: 0.95rem;
+   }
+
+   nav  {
+      flex-direction: column-reverse;
+   }
+
+   .nav-links {
+      width: 100%;
+   }
+
+   .nav-logo{
+      justify-content: center;
+      width: 200px;
+      height: auto;
+      margin-bottom: 25px;
+   }
+
+   .nav-logo a {
+      width: 100%;
+   }
+
+   .banner .innovation-image {
+      display: none;
+   }
+
+   .banner .text-and-button {
+      width: 100%;
+      font-size: 5rem;
+   }
+}
+
+@media (max-width: 500px) {
+
+   .nav-links {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+   }
+
+   .nav-links > a {
+      padding: 5px 0;
+      border-bottom: 1px solid black;
+   }
+
+   .nav-links > a:first-child {
+      border-top: 1px solid black;
+   }
+
+   .info-list .info-box {
+      width: 100%;
+      padding: 20px 0;
+   }
+   
+   .info-list .info-box.third {
+      width: 100%;
+   }
+
+}
